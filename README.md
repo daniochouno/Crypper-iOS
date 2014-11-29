@@ -9,27 +9,27 @@
 
 First, you can generate a RSA key pair using:
 
-// Generate an array with Public and Private keys of 2048 bits.
-NSArray *keys = [[RSAWrapper sharedInstance] generate:2048];  
+    // Generate an array with Public and Private keys of 2048 bits.
+    NSArray *keys = [[RSAWrapper sharedInstance] generate:2048];  
 
 Now you can encypt a message:
 
-NSString *encrypted = [[RSAWrapper sharedInstance] encrypt:@"HelloCrypper" withPublicKeyAsBase64:[keys objectAtIndex:0]];
+    NSString *encrypted = [[RSAWrapper sharedInstance] encrypt:@"HelloCrypper" withPublicKeyAsBase64:[keys objectAtIndex:0]];
 
 and decrypt:
 
-NSString *message = [[RSAWrapper sharedInstance] decrypt:encrypted withPrivateKeyAsBase64:[keys objectAtIndex:1]];
+    NSString *message = [[RSAWrapper sharedInstance] decrypt:encrypted withPrivateKeyAsBase64:[keys objectAtIndex:1]];
 
 ## Installation
 
 Crypper is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-pod "Crypper"
+    pod "Crypper"
 
 ## Author
 
-Daniel Martínez, dmartinez@danielmartinez.info
+Daniel Martínez, @dmartinezinfo, dmartinez@danielmartinez.info
 
 ## License
 
