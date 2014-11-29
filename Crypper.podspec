@@ -10,29 +10,19 @@
 Pod::Spec.new do |s|
   s.name             = "Crypper"
   s.version          = "0.1.0"
-  s.summary          = "A short description of Crypper."
-  s.description      = <<-DESC
-                       An optional longer description of Crypper
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/Crypper"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.summary          = "A crypto wrapper for iOS projects."
+  s.homepage         = "https://github.com/daniochouno/Crypper-iOS"
   s.license          = 'MIT'
   s.author           = { "Daniel Martínez" => "dmartinez@danielmartinez.info" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/Crypper.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/daniochouno/Crypper-iOS.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/dmartinezinfo'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes'
+  s.source_files = 'Pod/Classes/**/*.{h,m}'
   s.resource_bundles = {
     'Crypper' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
