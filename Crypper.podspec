@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.summary          = "A crypto wrapper for iOS projects."
   s.homepage         = "https://github.com/daniochouno/Crypper-iOS"
   s.license          = 'MIT'
-  s.author           = { "Daniel Martínez" => "dmartinez@danielmartinez.info" }
+  s.author           = { "Daniel Martinez" => "dmartinez@danielmartinez.info" }
   s.source           = { :git => "https://github.com/daniochouno/Crypper-iOS.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/dmartinezinfo'
 
